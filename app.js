@@ -15,7 +15,7 @@ function currentTime() {
     const hours = currentUTCDate.getUTCHours();
     const minutes = currentUTCDate.getUTCMinutes();
     const seconds = currentUTCDate.getUTCSeconds();
-    document.querySelector('[data-testid="currentUTCTime"]').innerHTML = `Current UTC Time: ${hours}: ${minutes}: ${seconds} `;
+    document.querySelector('[data-testid="currentUTCTime"]').innerHTML = `Current UTC Time: ${hours.toString().padStart(2, '0')}: ${minutes.toString().padStart(2, '0')}: ${seconds.toString().padStart(2, '0')} `;
     document.querySelector('[data-testid="myTrack"]').innerHTML = track
 }
 currentTime()
