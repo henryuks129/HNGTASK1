@@ -7,10 +7,15 @@
 body{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#f9c345 50%, #14151d 50% ) no-repeat;
+    background: linear-gradient(#ecdbb3 50%, #a0a5d1 50% ) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: fantasy;
     font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 22px;
 }
 
 main{
@@ -18,18 +23,38 @@ main{
 }
 
 .username{
-    font-size: 24px;
+    font-size: 38px;
 }
 
 .slack-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 250px;
     border-radius: 15%;
-    margin: 20px auto;
+    margin-top: 2rem;
 }
 
-.weekday, .current-time, .myTrack {
+.weekday {
     font-size: 20px;
-    padding-top: 17px;
+    margin-top: 2rem;
     font-weight: 700;
+}
+
+.current-time{
+    font-size: 20px;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.myTrack{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.github{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
